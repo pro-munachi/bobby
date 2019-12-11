@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Container } from "./styles";
 
 interface Props {
@@ -10,11 +10,16 @@ interface Props {
 
 const KnackCategory: React.FC<Props> = ({ imgUrl, title, link }) => {
   return (
-    <Link to={link}>
-      <Container img={imgUrl}>
-        <h3>{title}</h3>
-      </Container>
-    </Link>
+    // <a href={link}>
+    //   <Container img={imgUrl}>
+    //     <h3>{title}</h3>
+    //   </Container>
+      
+    // </a>
+  <Container img={imgUrl}>
+    <img src={imgUrl} />
+    <div className="centered"><h2>{title}</h2></div>
+  </Container>
   );
 };
 
