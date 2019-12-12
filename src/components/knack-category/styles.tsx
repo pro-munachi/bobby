@@ -11,6 +11,7 @@ export const Container = styled.div`
   color: white;
   width: 200px;
   height: 100px;
+  cursor: pointer;
   img {
     width: 200px;
     height: 100px;
