@@ -6,16 +6,15 @@ interface Props {
   title: string;
   subTitle: string;
 }
-const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
+const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   return (
     <Card>
       <img src={imgUrl} />
       <div className="container">
         <h1><b>{title}</b></h1><br />
-        <p>{subTitle}</p><br />
+        <div className="p">{subTitle}</div><br />
         <div className="footer">
           <img className="share" src="/assets/icon/share.svg" />
-          <img className="icon" src="/assets/icon/heart.png" />&nbsp;
           <span className="icon_text">1000 likes</span>
         </div>
       </div>
@@ -23,4 +22,4 @@ const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   );
 };
 
-export default KnackPack;
+export default KnackPack3;
