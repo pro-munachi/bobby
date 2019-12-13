@@ -6,7 +6,7 @@ interface Props {
   title: string;
   subTitle: string;
 }
-const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
+const KnackPack4: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   return (
     <Card>
       <img src={imgUrl} />
@@ -23,4 +23,4 @@ const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   );
 };
 
-export default KnackPack;
+export default KnackPack4;
