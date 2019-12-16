@@ -6,7 +6,6 @@ const PopUp: React.FC = (props) => {
   return (
   <Modal>
     {props.children}
-    <h1>Modal is working</h1>
   </Modal>
   );
 };

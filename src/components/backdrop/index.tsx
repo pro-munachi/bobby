@@ -1,14 +1,12 @@
 import * as React from "react";
 // import { Link } from "react-router-dom";
-import { Modal } from "./styles";
+import { BackDrop } from "./styles";
 
-const PopUp: React.FC = (props) => {
+const Backdrop: React.FC = () => {
   return (
-  <Modal>
-    {props.children}
-    <h1>Modal is working</h1>
-  </Modal>
+  <BackDrop>
+  </BackDrop>
   );
 };
 
-export default PopUp;
+export default Backdrop;
