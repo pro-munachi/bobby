@@ -9,7 +9,6 @@ import KnackPack4 from './components/knack-pack4';
 import Banner from './components/banner';
 import Header from './components/header';
 import Modal from './components/modal';
-import Backdrop from './components/backdrop';
 
 const App: React.FC = () => {
   return (
@@ -17,7 +16,6 @@ const App: React.FC = () => {
       <Modal>
       <h1>Modal is working</h1>
       </Modal>
-      <Backdrop />
       <Header height="70vh" title='Measure any skill. Make any decision.' imgUrl='/assets/img/header_image.jpg' subTitle='Pick from our skill packs or create your own.' />
       <KnackCategory imgUrl='/assets/img/people.png' title='Skills' link='/' />
       <KnackPack imgUrl='/assets/img/skills.jpg' title='Most in-demand skills' subTitle='Some sub text explaining more aboutthe skill.It should be about two lines long. Shouldbe about.' />
