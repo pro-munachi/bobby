@@ -27,6 +27,6 @@ function* watchFetchPacks() {
   yield takeLatest(PacksTypes.FETCH_PACKS_START, fetchPacksAsync);
 }
 
-export function* categoriesSagas() {
+export function* packsSagas() {
   yield all([call(watchFetchPacks)]);
 }
