@@ -1,11 +1,19 @@
 import * as React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import KnackCategory from "../knack-category";
 import { selectCategories } from "../../store/categories/selectors";
+import { fetchCategories } from "../../store/categories/actions";
 
-const KnackCatergories: React.FC = () => {
+const KnackCatergoryList: React.FC = () => {
+  const dispatch = useDispatch();
   const categories = useSelector(selectCategories);
+
+  React.useEffect(() => {
+    dispatch(fetchCategories());
+  }, [dispatch]);
+
+  console.log(categories);
   return (
     <div>
       {categories.map(({ id, ...categoryProps }) => (
@@ -15,4 +23,4 @@ const KnackCatergories: React.FC = () => {
   );
 };
 
-export default KnackCatergories;
+export default KnackCatergoryList;

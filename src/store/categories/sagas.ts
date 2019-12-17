@@ -9,7 +9,7 @@ Axios.defaults.baseURL = "https://knack-v2.herokuapp.com/";
 function* fetchCategoriesAsync() {
   try {
     const { data } = yield Axios.get("/categories");
-    const categories = yield data.map((category: any) => {
+    const categories = yield data.data.map((category: any) => {
       return {
         id: category.id,
         title: category.attributes.name,
