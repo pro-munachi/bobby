@@ -10,6 +10,7 @@ import Header from "./components/header";
 import Modal from "./components/modal";
 import CardCarousel from "./components/card-carousel";
 import SectionHead from "./components/section-head";
+import { categories } from "./data";
 
 const App: React.FC = () => {
   return (
@@ -25,10 +26,11 @@ const App: React.FC = () => {
         subTitle="Pick from our skill packs or create your own."
       />
       <KnackCategories />
-      <SectionHead
+      {/* <SectionHead
         title="Promoted Skill Packs"
         subTitle="Some subtext that goes here and is about this length"
-      />
+
+      /> */}
       <KnackPack
         imgUrl="/assets/img/skills.jpg"
         title="Most in-demand skills"

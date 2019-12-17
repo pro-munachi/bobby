@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Container } from "./styles"
+import Spinner from "../../components/spinner"
 
 import KnackCategory from "../knack-category";
 import {
@@ -18,15 +20,15 @@ const KnackCatergoryList: React.FC = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <Container>
       {isLoading ? (
-        <h2>Loading...</h2>
+        <Spinner />
       ) : (
         categories.map(({ id, ...categoryProps }) => (
           <KnackCategory key={id} {...categoryProps} />
         ))
       )}
-    </div>
+    </Container>
   );
 };
 
