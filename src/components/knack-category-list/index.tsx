@@ -13,7 +13,6 @@ const KnackCatergoryList: React.FC = () => {
     dispatch(fetchCategories());
   }, [dispatch]);
 
-  console.log(categories);
   return (
     <div>
       {categories.map(({ id, ...categoryProps }) => (
