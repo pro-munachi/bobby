@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Card } from './styles';
+import { Card } from "./styles";
+import { ReactComponent as ShareButton } from "../../assets/icons/share.svg";
 
 interface Props {
   imgUrl: string;
@@ -9,12 +10,16 @@ interface Props {
 const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   return (
     <Card>
-      <img src={imgUrl} />
+      <img src={imgUrl} alt='' />
       <div className="container">
-        <h1><b>{title}</b></h1><br />
-        <div className="p">{subTitle}</div><br />
+        <h1>
+          <b>{title}</b>
+        </h1>
+        <br />
+        <div className="p">{subTitle}</div>
+        <br />
         <div className="footer">
-          <img className="share" src="/assets/icon/share.svg" />
+          <ShareButton />
           <span className="icon_text">1000 likes</span>
         </div>
       </div>
