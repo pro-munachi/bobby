@@ -11,8 +11,6 @@ import Modal from "./components/modal";
 import CardCarousel from "./components/card-carousel";
 import SectionHead from "./components/section-head";
 
-import { categories } from "./data";
-
 const App: React.FC = () => {
   return (
     <div>
@@ -26,7 +24,7 @@ const App: React.FC = () => {
         imgUrl="/assets/img/header_image.jpg"
         subTitle="Pick from our skill packs or create your own."
       />
-      <KnackCategories categories={categories} />
+      <KnackCategories />
       <SectionHead
         title="Promoted Skill Packs"
         subTitle="Some subtext that goes here and is about this length"

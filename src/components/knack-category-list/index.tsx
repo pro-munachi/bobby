@@ -1,18 +1,15 @@
 import * as React from "react";
-
-import { Cartegory } from "../../data";
+import { useSelector } from "react-redux";
 
 import KnackCategory from "../knack-category";
+import { selectCategories } from "../../store/categories/selectors";
 
-interface Props {
-  categories: Cartegory[];
-}
-
-const KnackCatergories: React.FC<Props> = ({ categories }) => {
+const KnackCatergories: React.FC = () => {
+  const categories = useSelector(selectCategories);
   return (
     <div>
-      {categories.map(category => (
-        <KnackCategory key={category.title} {...category} />
+      {categories.map(({ id, ...categoryProps }) => (
+        <KnackCategory key={id} {...categoryProps} />
       ))}
     </div>
   );
