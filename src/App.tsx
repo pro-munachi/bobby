@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import KnackCategory from "./components/knack-category";
+import KnackCategories from "./components/knack-category-list";
 import KnackPack from "./components/knack-pack";
 import KnackPack2 from "./components/knack-pack2";
 import KnackPack3 from "./components/knack-pack3";
@@ -10,6 +10,8 @@ import Header from "./components/header";
 import Modal from "./components/modal";
 import CardCarousel from "./components/card-carousel";
 import SectionHead from "./components/section-head";
+
+import { categories } from "./data";
 
 const App: React.FC = () => {
   return (
@@ -24,7 +26,7 @@ const App: React.FC = () => {
         imgUrl="/assets/img/header_image.jpg"
         subTitle="Pick from our skill packs or create your own."
       />
-      <KnackCategory imgUrl="/assets/img/people.png" title="Skills" link="/" />
+      <KnackCategories categories={categories} />
       <SectionHead
         title="Promoted Skill Packs"
         subTitle="Some subtext that goes here and is about this length"
