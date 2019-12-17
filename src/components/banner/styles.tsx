@@ -71,9 +71,9 @@ export const Container = styled.div`
         line-height: 0px;
         color: #E03170;
 
-        padding: 10px 25px;
+        padding: 15px 25px;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 5px;
         border: none;
         cursor: pointer;
 

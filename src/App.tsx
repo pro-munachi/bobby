@@ -7,10 +7,17 @@ import KnackPack3 from "./components/knack-pack3";
 import KnackPack4 from "./components/knack-pack4";
 import Banner from "./components/banner";
 import Header from "./components/header";
+import Modal from "./components/modal";
+import CardCarousel from "./components/card-carousel";
+import SectionHead from "./components/section-head";
 
 const App: React.FC = () => {
   return (
     <div>
+      <Modal>
+        <h1>Modal is working</h1>
+      </Modal>
+      <CardCarousel />
       <Header
         height="70vh"
         title="Measure any skill. Make any decision."
@@ -18,6 +25,10 @@ const App: React.FC = () => {
         subTitle="Pick from our skill packs or create your own."
       />
       <KnackCategory imgUrl="/assets/img/people.png" title="Skills" link="/" />
+      <SectionHead
+        title="Promoted Skill Packs"
+        subTitle="Some subtext that goes here and is about this length"
+      />
       <KnackPack
         imgUrl="/assets/img/skills.jpg"
         title="Most in-demand skills"
