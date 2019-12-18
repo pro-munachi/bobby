@@ -14,7 +14,7 @@ function* fetchPacksAsync() {
         id: pack.id,
         title: pack.attributes.name,
         imgUrl: pack.attributes.img || "/assets/img/people.png",
-        link: pack.links.self
+        subTitle: pack.links.self
       } as Pack;
     });
     yield put(fetchPacksSuccess(packs));

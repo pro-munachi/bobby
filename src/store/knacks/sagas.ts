@@ -9,12 +9,13 @@ Axios.defaults.baseURL = "https://knack-v2.herokuapp.com/";
 function* fetchKnacksAsync() {
   try {
     const { data } = yield Axios.get("/knacks");
+    console.log(data);
     const knacks = yield data.data.map((knack: any) => {
       return {
         id: knack.id,
         title: knack.attributes.name,
         imgUrl: knack.attributes.img || "/assets/img/people.png",
-        link: knack.links.self
+        subTitle: knack.links.self
       } as Knack;
     });
     yield put(fetchKnacksSuccess(knacks));

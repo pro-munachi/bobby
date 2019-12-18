@@ -19,7 +19,7 @@ const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
         <div className="p">{subTitle}</div>
         <br />
         <div className="footer">
-          <ShareButton />
+          <ShareButton className="share" />
           <span className="icon_text">1000 likes</span>
         </div>
       </div>

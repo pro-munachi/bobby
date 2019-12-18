@@ -9,8 +9,7 @@ import Banner from "./components/banner";
 import Header from "./components/header";
 import Modal from "./components/modal";
 import CardCarousel from "./components/card-carousel";
-import SectionHead from "./components/section-head";
-import { categories } from "./data";
+import SectionHead from "./components/section-head"; 
 
 const App: React.FC = () => {
   return (

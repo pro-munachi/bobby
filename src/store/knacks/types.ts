@@ -8,7 +8,7 @@ export interface Knack {
   id: string;
   title: string;
   imgUrl: string;
-  link: string;
+  subTitle: string;
 }
 
 export interface KnacksState {

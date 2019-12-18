@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const  Card  = styled.div`
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06);
     transition: 0.3s;
-    width: 280px;
+    width: 265px;
     height: 100%;
     /* padding-bottom: 10px; */
     :hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
   }
     cursor: pointer;
     img {
-        width: 280px;
+        width: 265px;
         height: 180px;
     }
     .icon {

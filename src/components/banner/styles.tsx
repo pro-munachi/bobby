@@ -9,6 +9,8 @@ export const Container = styled.div`
   width: 100%;
   height: 200px;
   border-radius: 10px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 
   background-size: cover !important;
   background-position: center center !important;
@@ -63,6 +65,7 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-right: 150px;
 
       button {
         text-decoration: none;
@@ -70,7 +73,7 @@ export const Container = styled.div`
         font-size: 18px;
         line-height: 0px;
         color: #E03170;
-
+        
         padding: 15px 25px;
         background-color: white;
         border-radius: 5px;

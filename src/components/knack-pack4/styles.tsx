@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const  Card  = styled.div`
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
-    width: 390px;
+    width: 365px;
     height: 100%;
-    :hover {
+    /* :hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+  } */
     cursor: pointer;
     img {
-        width: 390px;
+        width: 365px;
         height: 250px;
         border-radius: 10px;
     }
