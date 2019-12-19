@@ -6,7 +6,6 @@ export const Modal = styled.div`
     background-color: white;
     width: 50%;
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px black;
     padding: 16px;
     left: 26%;
     top: 20%;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const  Card  = styled.div`
-    width: 265px;
+    width: 23%;
     cursor: pointer;
     .img {
-        width: 265px;
+        width: 100%;
         height: 300px;
 }
 .p {

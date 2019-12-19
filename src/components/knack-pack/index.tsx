@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Card } from './styles';
+import  Modal from '../modal';
 
 interface Props {
   imgUrl: string;
@@ -7,9 +8,26 @@ interface Props {
   subTitle: string;
 }
 const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
+
+  let [modal, setModal] = React.useState(false);
+
+  const openModal = () => {
+    setModal(modal = true);
+  }
+
+  const closeModal = () => {
+    setModal(modal = false);
+  }
+
   return (
     <Card>
-      <img src={imgUrl} />
+      {modal &&
+        <Modal>
+        <h2 onClick={closeModal} style={{float: "right"}}>X</h2>
+        card modal working
+      </Modal>
+      }
+      <img onClick={openModal} src={imgUrl} />
       <div className="container">
         <h1><b>{title}</b></h1><br />
         <p>{subTitle}</p><br />

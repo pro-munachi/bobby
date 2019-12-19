@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React  from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Container } from "./styles"
 import Spinner from "../../components/spinner"

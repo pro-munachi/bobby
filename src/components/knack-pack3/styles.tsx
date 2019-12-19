@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const  Card  = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06);
     transition: 0.3s;
-    width: 265px;
+    width: 23%;
     height: 100%;
     /* padding-bottom: 10px; */
     :hover {
@@ -11,7 +11,7 @@ export const  Card  = styled.div`
   }
     cursor: pointer;
     img {
-        width: 265px;
+        width: 100%;
         height: 180px;
     }
     .icon {

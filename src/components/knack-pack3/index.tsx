@@ -1,5 +1,7 @@
 import * as React from "react";
+import { useState } from 'react';
 import { Card } from "./styles";
+import  Modal from '../modal';
 import { ReactComponent as ShareButton } from "../../assets/icons/share.svg";
 
 interface Props {
@@ -8,9 +10,26 @@ interface Props {
   subTitle: string;
 }
 const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
+
+  let [modal, setModal] = useState(false);
+
+  const openModal = () => {
+    setModal(modal = true);
+  }
+
+  const closeModal = () => {
+    setModal(modal = false);
+  }
+
   return (
     <Card>
-      <img src={imgUrl} alt='' />
+      {modal &&
+        <Modal>
+        <h2 onClick={closeModal} style={{float: "right"}}>X</h2>
+        card modal working
+      </Modal>
+      }
+      <img onClick={openModal} src={imgUrl} alt='' />
       <div className="container">
         <h1>
           <b>{title}</b>
