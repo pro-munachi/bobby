@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Card } from "./styles";
 import  Modal from '../modal';
+import  PackPop from '../card-pop-up';
+
 
 
 interface Props {
@@ -23,9 +25,8 @@ const KnackPack2: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
     <Card>
       {modal &&
         <Modal>
-        <h2 onClick={closeModal} style={{float: "right"}}>X</h2>
-        card modal working
-      </Modal>
+          <PackPop closeModal={closeModal} />
+        </Modal>
       }
       <div className="card">
         <img onClick={openModal} className="img" src={imgUrl} alt="" />

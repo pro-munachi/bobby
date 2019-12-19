@@ -11,12 +11,12 @@ export const Container = styled.div`
   color: white;
   width: 200px;
   height: 100px;
-  cursor: pointer;
   img {
     width: 200px;
     height: 100px;
     border-radius: 7px;
     background: rgba(0, 0, 0, .6);
+    cursor: pointer;
   }
   .centered {
     position: absolute;

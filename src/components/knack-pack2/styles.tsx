@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const  Card  = styled.div`
     width: 23%;
-    cursor: pointer;
     .img {
         width: 100%;
         height: 300px;
+        cursor: pointer;
 }
 .p {
   padding-top: 8px;

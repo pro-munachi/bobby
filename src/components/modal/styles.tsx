@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Modal = styled.div`
+    margin: 0;
+    padding: 0;
      position: fixed;
     z-index: 100;
     background-color: white;
-    width: 50%;
+    width: 45%;
     border: 1px solid #ccc;
-    padding: 16px;
     left: 26%;
-    top: 20%;
+    top: 15%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
 

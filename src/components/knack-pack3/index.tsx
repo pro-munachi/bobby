@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from 'react';
 import { Card } from "./styles";
 import  Modal from '../modal';
+import  PackPop from '../card-pop-up';
 import { ReactComponent as ShareButton } from "../../assets/icons/share.svg";
 
 interface Props {
@@ -25,8 +26,7 @@ const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
     <Card>
       {modal &&
         <Modal>
-        <h2 onClick={closeModal} style={{float: "right"}}>X</h2>
-        card modal working
+          <PackPop closeModal={closeModal} />
       </Modal>
       }
       <img onClick={openModal} src={imgUrl} alt='' />

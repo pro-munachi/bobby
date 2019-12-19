@@ -8,10 +8,10 @@ export const  Card  = styled.div`
     :hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
   }
-    cursor: pointer;
     img {
         width: 100%;
         height: 200px;
+        cursor: pointer;
     }
     .icon {
         width: 12px;
