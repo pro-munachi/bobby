@@ -32,12 +32,12 @@ export const Container = styled.div`
 
 .header__logo a .logo {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 25px;
-  color: #fff;
+  color: #E03170;
 }
 
 .header__navs {
@@ -61,12 +61,12 @@ export const Container = styled.div`
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__navs .menu li {
@@ -74,11 +74,11 @@ export const Container = styled.div`
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -116,7 +116,7 @@ export const Container = styled.div`
 .header__navs .menu li a.button.outline {
   padding: 11px 37px !important;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 5px;
 }

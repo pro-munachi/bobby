@@ -3,19 +3,18 @@ import { Container } from './styles'
 import "../../App.css";
 import Header from "../../components/header";
 import PackHead from "../../components/section-head";
+import PackHead1 from "../../components/section-head1";
 import KnackCatergory from "../../components/knack-category-list";
 import KnackPack1 from "../../components/knack-pack-list";
-import KnackPack2 from "../../components/knack-pack2-list";
-import KnackPack3 from "../../components/knack-pack3-list";
-import KnackPack4 from "../../components/knack-pack4-list";
+import KnackPack from "../../components/knack-pack1-list";
 import Banner from "../../components/banner";
 
 const KnackCatergories: React.FC = () => {
 
-    const title ="Measure any skill. Make any decision.";
-    const subTitle ="Pick from our skill packs or create your own.";
-    const imgUrl ="/assets/img/header_image.jpg";
-    const height ="70vh";
+    const title ="Discover the world's hidden talent and potential.";
+    const subTitle ="Match people and pathways to the skills economy.";
+    const imgUrl ="https://assets.knack.it/knackapp/top.jpg";
+    const height ="90vh";
     const textAllign = "center"
     const cardAllign = "left"
     const tittle1 = "Explore Categories"
@@ -35,8 +34,15 @@ const KnackCatergories: React.FC = () => {
     <Container>
         <Header title={title} subTitle={subTitle} imgUrl={imgUrl} height={height} />
         <div className="packs">
+
             <PackHead textAllign={textAllign} subTitle={Subtitle1} title={tittle1} />
             <KnackCatergory />
+
+            <PackHead1 
+                subTitle="Pick from our skill packs or create your own." 
+                title="Identify skills and pathways." 
+                textAllign="center" 
+            />
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle2} />
             <KnackPack1 />
@@ -48,26 +54,26 @@ const KnackCatergories: React.FC = () => {
             <KnackPack1 />
 
             <Banner
-                title="Want a customised skill pack"
-                imgUrl="/assets/img/land.jpg"
+                title="Looking to customize your skill pack?"
+                imgUrl="https://assets.knack.it/knackapp/banner1.jpeg"
                 subTitle="Browse our Skill Store"
                 buttonText="Take me there"
             />
 
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle5} />
-            <KnackPack2 />
+            <KnackPack />
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle6} />
-            <KnackPack3 /><br /><br />
-            <KnackPack3 />
+            <KnackPack /><br /><br />
+            <KnackPack />
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle7} />
-            <KnackPack2 />
+            <KnackPack />
 
             <Banner
-                title="Want a customised skill pack"
-                imgUrl="/assets/img/land.jpg"
+                title="Looking to customize your skill pack?"
+                imgUrl="https://assets.knack.it/knackapp/banner2.jpeg"
                 subTitle="Browse our Skill Store"
                 buttonText="Take me there"
             />
@@ -76,14 +82,14 @@ const KnackCatergories: React.FC = () => {
             <KnackPack1 />
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle9} />
-            <KnackPack4 />
+            <KnackPack1 />
 
             <PackHead textAllign={cardAllign} subTitle={Subtitle2} title={tittle10} />
-            <KnackPack4 />
+            <KnackPack1 />
 
 
             <Banner
-                title="Want a customised skill pack"
+                title="Looking to customize your skill pack?"
                 imgUrl="/assets/img/land.jpg"
                 subTitle="Browse our Skill Store"
                 buttonText="Take me there"
