@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+* {
+	outline: none;
+}
 
 html body {
   margin: 0;
