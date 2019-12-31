@@ -32,12 +32,12 @@ const KnackPack: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
   return (
     <Card>
       {modal &&
-        <Modal>
+        <Modal closeModal={closeModal}>
         <PackPop closeModal={closeModal} />
       </Modal>
       }
       {share &&
-      <Modal>
+      <Modal closeModal={closeShare}>
           <SharePopUp closeModal={closeShare} />
       </Modal>
       }

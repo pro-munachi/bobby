@@ -4,10 +4,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   .head {
   position: fixed;
-  left: 350px;
-  top: 99px;
+  left: 25.99%;
+  top: 15%;
   height: 70px;
-  width: 568px;
+  width: 580px;
   background: url("/assets/img/skills.jpg");
   background-position: center ;
   background-size: cover ;

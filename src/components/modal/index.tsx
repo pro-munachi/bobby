@@ -1,15 +1,19 @@
 import * as React from "react";
 // import { Link } from "react-router-dom";
 import { Modal } from "./styles";
-import Backdrop from "../backdrop"
+import Backdrop from "../backdrop";
 
-const PopUp: React.FC = (props) => {
+interface Props {
+  closeModal: any;
+}
+
+const PopUp: React.FC<Props> = (props) => {
   return (
     <div>
       <Modal>
         {props.children}
       </Modal>
-      <Backdrop />
+      <Backdrop closeModal={props.closeModal} />
   </div>
   );
 };

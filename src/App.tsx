@@ -14,9 +14,9 @@ import SectionHead from "./components/section-head";
 const App: React.FC = () => {
   return (
     <div>
-      <Modal>
+      {/* <Modal>
         <h1>Modal is working</h1>
-      </Modal>
+      </Modal> */}
       <CardCarousel />
       <Header
         height="70vh"

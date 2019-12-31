@@ -22,11 +22,11 @@ const KnackPack4: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
 
   return (
     <Card>
-      {modal &&
+      {/* {modal &&
         <Modal>
           <PackPop closeModal={closeModal} />
       </Modal>
-      }
+      } */}
       <img onClick={openModal} src={imgUrl} />
       <div className="container">
         <div className="footer">

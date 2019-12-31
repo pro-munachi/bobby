@@ -24,11 +24,11 @@ const KnackPack3: React.FC<Props> = ({ imgUrl, title, subTitle }) => {
 
   return (
     <Card>
-      {modal &&
+      {/* {modal &&
         <Modal>
           <PackPop closeModal={closeModal} />
       </Modal>
-      }
+      } */}
       <img onClick={openModal} src={imgUrl} alt='' />
       <div className="container">
         <h1>

@@ -43,8 +43,8 @@ const PouUp: React.FC<Props> = ({ closeModal }) => {
         <div>
           <a href="http://twitter.com" target="blank">
             <Email className="icons" />
-            <h4>Email</h4>
           </a>
+            <h4>Email</h4>
         </div>
     </div>
     <div className="copy">
